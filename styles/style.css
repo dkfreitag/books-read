@@ -1,5 +1,5 @@
 h1 {
-  margin: 20px auto;
+  margin: 2rem auto;
   width: 90%;
 }
 
@@ -9,6 +9,6 @@ p {
 }
 
 div.dt-container {
-    margin: 30px auto;
+    margin: 2rem auto;
     width: 90%;
 }
