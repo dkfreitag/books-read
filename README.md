@@ -8,5 +8,5 @@ Also, an opportunity to practice front end development.
 
 Create the python_book_table.html file:
 ```
-python create_book_table.py books.csv python_book_table.html
+python create_book_table.py books.csv index.html
 ```
