@@ -1,0 +1,14 @@
+h1 {
+  margin: 20px auto;
+  width: 90%;
+}
+
+p {
+  margin: 0 auto;
+  width: 90%;
+}
+
+div.dt-container {
+    margin: 30px auto;
+    width: 90%;
+}

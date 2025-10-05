@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en-US" class="dark" data-bs-theme="dark">
+
+<head>
+  <meta charset="uft-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Uses https://datatables.net/ and https://getbootstrap.com/docs/5.0/content/tables/ -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.bootstrap5.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/columncontrol/1.1.0/css/columnControl.dataTables.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/2.3.4/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/2.3.4/js/dataTables.bootstrap5.js"></script>
+  <script src="https://cdn.datatables.net/columncontrol/1.1.0/js/dataTables.columnControl.min.js"></script>
+  
+  <title>David Freitag's Book List</title>
+
+</head>
+<body>
+  <h1>David Freitag's Book List</h1>
+  <p>These are books I have read, started to read, or want to read.</p>
+  <p>I started keeping this list in "real time" in 2025, so books read before 2025 have a year of "NULL."<p>
+
+  <div class="table-responsive">
+  <table id="myTable" class="table table-striped table-hover table-bordered">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Year</th>
+      <th>Status</th>
+      <th>Format</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Previously Read</th>
+      <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>2025</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Lord+of+the+Rings" target="_new">The Lord of the Rings</a></i></td>
+      <td>J.R.R. Tolkien</td>
+      <td>True</td>
+      <td>Previously read: 2010, 2021, 2024</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2025</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Harry+Potter+and+the+Sorcerer's+Stone" target="_new">Harry Potter and the Sorcerer's Stone</a></i></td>
+      <td>J.K. Rowling</td>
+      <td>True</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2025</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Harry+Potter+and+The+Chamber+of+Secrets" target="_new">Harry Potter and The Chamber of Secrets</a></i></td>
+      <td>J.K. Rowling</td>
+      <td>True</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2025</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=107+Days" target="_new">107 Days</a></i></td>
+      <td>Kamala Harris</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Harry+Potter+and+the+Prisoner+of+Azkaban" target="_new">Harry Potter and the Prisoner of Azkaban</a></i></td>
+      <td>J.K. Rowling</td>
+      <td>True</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Education+of+Henry+Adams" target="_new">The Education of Henry Adams</a></i></td>
+      <td>Henry Adams</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Autobiography+of+Benjamin+Franklin" target="_new">The Autobiography of Benjamin Franklin</a></i></td>
+      <td>Benjamin Franklin</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>2025</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=Team+of+Rivals:+The+Political+Genius+of+Abraham+Lincoln" target="_new">Team of Rivals: The Political Genius of Abraham Lincoln</a></i></td>
+      <td>Doris Kearns Goodwin</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Bully+Pulpit:+Theodore+Roosevelt,+William+Howard+Taft,+and+the+Golden+Age+of+Journalism" target="_new">The Bully Pulpit: Theodore Roosevelt, William Howard Taft, and the Golden Age of Journalism</a></i></td>
+      <td>Doris Kearns Goodwin</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>2025</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=Outlive:+The+Science+and+Art+of+Longevity" target="_new">Outlive: The Science and Art of Longevity</a></i></td>
+      <td>Peter Attia, MD</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Nine:+Insice+the+Secret+World+of+the+Supreme+Court" target="_new">The Nine: Insice the Secret World of the Supreme Court</a></i></td>
+      <td>Jeffrey Toobin</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=Inspired:+How+to+Create+Tech+Products+Customers+Love" target="_new">Inspired: How to Create Tech Products Customers Love</a></i></td>
+      <td>Marty Cagan</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=On+Character:+Choices+That+Define+a+Life" target="_new">On Character: Choices That Define a Life</a></i></td>
+      <td>Stanley A. McChrystal</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Slow+Productivity" target="_new">Slow Productivity</a></i></td>
+      <td>Cal Newport</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Deep+Work" target="_new">Deep Work</a></i></td>
+      <td>Cal Newport</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>2025</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Garibaldi+and+His+Enemies" target="_new">Garibaldi and His Enemies</a></i></td>
+      <td>Christopher Hibbert</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Endurance" target="_new">Endurance</a></i></td>
+      <td>Alfred Lansing</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=Brain+Energy" target="_new">Brain Energy</a></i></td>
+      <td>Christopher M. Palmer, MD</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Dopamine+Nation" target="_new">Dopamine Nation</a></i></td>
+      <td>Dr. Anna Lembke</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Talking+to+My+Daughter+About+the+Economy" target="_new">Talking to My Daughter About the Economy</a></i></td>
+      <td>Yanis Varoufakis</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Genghis+Khan+and+the+Making+of+the+Modern+World" target="_new">Genghis Khan and the Making of the Modern World</a></i></td>
+      <td>Jack Weatherford</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Glass+Castle" target="_new">The Glass Castle</a></i></td>
+      <td>Jeanette Walls</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=High+Output+Management" target="_new">High Output Management</a></i></td>
+      <td>Andrew S. Grove</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Can't+Hurt+Me" target="_new">Can't Hurt Me</a></i></td>
+      <td>David Goggins</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=A+Thousand+Splendid+Suns" target="_new">A Thousand Splendid Suns</a></i></td>
+      <td>Khaled Hosseini</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Hobbit" target="_new">The Hobbit</a></i></td>
+      <td>J.R.R. Tolkien</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Why+Zebras+Don't+Get+Ulcers:+The+Acclaimed+Guide+to+Stress,+Stress-Related+Diseases,+and+Coping" target="_new">Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Diseases, and Coping</a></i></td>
+      <td>Robert M. Sapolsky</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Woman+Warrior" target="_new">The Woman Warrior</a></i></td>
+      <td>Maxine Hong Kingston</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Latehomecomer:+A+Hmong+Family+Memoir" target="_new">The Latehomecomer: A Hmong Family Memoir</a></i></td>
+      <td>Kao Kalia Yang</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=What+We+Talk+About+When+We+Talk+About+Love" target="_new">What We Talk About When We Talk About Love</a></i></td>
+      <td>Raymond Carver</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Moral+Animal:+Why+We+Are+the+Way+We+Are:+The+New+Science+of+Evolutionary+Psychology" target="_new">The Moral Animal: Why We Are the Way We Are: The New Science of Evolutionary Psychology</a></i></td>
+      <td>Robert Wright</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+C+Programming+Language,+Second+Edition" target="_new">The C Programming Language, Second Edition</a></i></td>
+      <td>Brian W. Kernighan and Dennis M. Ritchie</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+War+of+Art" target="_new">The War of Art</a></i></td>
+      <td>Steven Pressfield</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=When+Breath+Becomes+Air" target="_new">When Breath Becomes Air</a></i></td>
+      <td>Paul Kalanithi</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Fallen+Angels" target="_new">Fallen Angels</a></i></td>
+      <td>Walter Dean Meyers</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Things+They+Carried" target="_new">The Things They Carried</a></i></td>
+      <td>Tim O'Brien</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Much+Ado+About+Nothing" target="_new">Much Ado About Nothing</a></i></td>
+      <td>William Shakespeare</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Hamlet" target="_new">Hamlet</a></i></td>
+      <td>William Shakespeare</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Taming+of+the+Shrew" target="_new">The Taming of the Shrew</a></i></td>
+      <td>William Shakespeare</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Romeo+and+Juliet" target="_new">Romeo and Juliet</a></i></td>
+      <td>William Shakespeare</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=King+Lear" target="_new">King Lear</a></i></td>
+      <td>William Shakespeare</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Antony+and+Cleopatra" target="_new">Antony and Cleopatra</a></i></td>
+      <td>William Shakespeare</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Julius+Caesar" target="_new">Julius Caesar</a></i></td>
+      <td>William Shakespeare</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Twelfth+Night" target="_new">Twelfth Night</a></i></td>
+      <td>William Shakespeare</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=To+Kill+A+Mockingbird" target="_new">To Kill A Mockingbird</a></i></td>
+      <td>Harper Lee</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Jane+Eyre" target="_new">Jane Eyre</a></i></td>
+      <td>Charlotte Bronte</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Pride+and+Prejudice" target="_new">Pride and Prejudice</a></i></td>
+      <td>Jane Austen</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Robinson+Crusoe" target="_new">Robinson Crusoe</a></i></td>
+      <td>Daniel Defoe</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Heart+of+Darkness" target="_new">Heart of Darkness</a></i></td>
+      <td>Joseph Conrad</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Call+of+Cthulu" target="_new">The Call of Cthulu</a></i></td>
+      <td>H.P. Lovecraft</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Of+Mice+and+Men" target="_new">Of Mice and Men</a></i></td>
+      <td>John Steinbeck</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Old+Man+and+the+Sea" target="_new">The Old Man and the Sea</a></i></td>
+      <td>Ernest Hemingway</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Hour+Between+Dog+and+Wolf:+Risk+Taking,+Gut+Feelings+and+the+Biology+of+Boom+and+Bust" target="_new">The Hour Between Dog and Wolf: Risk Taking, Gut Feelings and the Biology of Boom and Bust</a></i></td>
+      <td>John Coates</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=On+Writing:+A+Memoir+of+the+Craft" target="_new">On Writing: A Memoir of the Craft</a></i></td>
+      <td>Stephen King</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=A+Raisin+in+the+Sun" target="_new">A Raisin in the Sun</a></i></td>
+      <td>Lorraine Hansberry</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Lost+Connections:+Uncovering+the+Real+Causes+of+Depression+-+and+the+Unexpected+Solutions" target="_new">Lost Connections: Uncovering the Real Causes of Depression - and the Unexpected Solutions</a></i></td>
+      <td>Johann Hari</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Art+of+Living:+The+Classical+Manual+on+Virtue,+Happiness+and+Effectiveness" target="_new">The Art of Living: The Classical Manual on Virtue, Happiness and Effectiveness</a></i></td>
+      <td>Epictetus</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Maus+I:+A+Survivor's+Tale:+My+Father+Bleeds+History" target="_new">Maus I: A Survivor's Tale: My Father Bleeds History</a></i></td>
+      <td>Art Spiegelman</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Maus+II:+A+Survivor's+Tale:+And+Here+My+Troubles+Began" target="_new">Maus II: A Survivor's Tale: And Here My Troubles Began</a></i></td>
+      <td>Art Spiegelman</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=My+Stroke+of+Insight:+A+Brain+Scientist's+Personal+Journey" target="_new">My Stroke of Insight: A Brain Scientist's Personal Journey</a></i></td>
+      <td>Jill Bolte Taylor</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Body+Keeps+the+Score:+Brain,+Mind,+and+Body+in+the+Healing+of+Trauma" target="_new">The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</a></i></td>
+      <td>Bessel van der Kolk</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Siddhartha" target="_new">Siddhartha</a></i></td>
+      <td>Herman Hesse</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Man's+Search+for+Meaning" target="_new">Man's Search for Meaning</a></i></td>
+      <td>Viktor E. Frankl</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=Fields+of+Blood:+Religion+and+the+History+of+Violence" target="_new">Fields of Blood: Religion and the History of Violence</a></i></td>
+      <td>Karen Armstrong</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=A+Walk+in+the+Woods:+Rediscovering+America+on+the+Appalachian+Trail" target="_new">A Walk in the Woods: Rediscovering America on the Appalachian Trail</a></i></td>
+      <td>Bill Bryson</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Godfather" target="_new">The Godfather</a></i></td>
+      <td>Mario Puzo</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Darwinian+Psychiatry" target="_new">Darwinian Psychiatry</a></i></td>
+      <td>Michael McGuire</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=A+Confederacy+of+Dunces" target="_new">A Confederacy of Dunces</a></i></td>
+      <td>John Kennedy Toole</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Paradise+Lost" target="_new">Paradise Lost</a></i></td>
+      <td>John Milton</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Tribe:+On+Homecoming+and+Belonging" target="_new">Tribe: On Homecoming and Belonging</a></i></td>
+      <td>Sebastian Junger</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Smartest+Kids+in+the+World:+And+How+They+Got+That+Way" target="_new">The Smartest Kids in the World: And How They Got That Way</a></i></td>
+      <td>Amanda Ripley</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=A+Place+to+Stand" target="_new">A Place to Stand</a></i></td>
+      <td>Jimmy Santiago Baca</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Audio</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Power+of+Habit:+Why+We+Do+What+We+Do+in+Life+and+Business" target="_new">The Power of Habit: Why We Do What We Do in Life and Business</a></i></td>
+      <td>Charles Duhigg</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Who+Moved+My+Cheese?" target="_new">Who Moved My Cheese?</a></i></td>
+      <td>Spencer Johnson</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Beowulf" target="_new">Beowulf</a></i></td>
+      <td>NULL</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Slaughterhouse+Five" target="_new">Slaughterhouse Five</a></i></td>
+      <td>Kurt Vonnegut Jr.</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Nineteen+Reservoirs" target="_new">Nineteen Reservoirs</a></i></td>
+      <td>Lucy Sante</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Chip+War" target="_new">Chip War</a></i></td>
+      <td>Chris Miller</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Behave:+The+Biology+of+Humans+at+Our+Best+and+Worst" target="_new">Behave: The Biology of Humans at Our Best and Worst</a></i></td>
+      <td>Robert M. Sapolsky</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Why+We+Get+Sick" target="_new">Why We Get Sick</a></i></td>
+      <td>Randolph M. Nesse, M.D., and George C. Williams, Ph.D.</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=UNIX:+A+History+and+a+Memoir" target="_new">UNIX: A History and a Memoir</a></i></td>
+      <td>Brian Kernighan</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Rough+Riders" target="_new">The Rough Riders</a></i></td>
+      <td>Theodore Roosevelt</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+River+of+Doubt:+Theodore+Roosevelt's+Darkest+Journey" target="_new">The River of Doubt: Theodore Roosevelt's Darkest Journey</a></i></td>
+      <td>Candice Millard</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Leadership+in+Turbulent+Times" target="_new">Leadership in Turbulent Times</a></i></td>
+      <td>Doris Kearns Goodwin</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=No+Ordinary+Time:+Franklin+and+Eleanor+Roosevelt:+The+Home+Front+in+World+War+II" target="_new">No Ordinary Time: Franklin and Eleanor Roosevelt: The Home Front in World War II</a></i></td>
+      <td>Doris Kearns Goodwin</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Perrine's+Literature:+Structure,+Sound,+and+Sense" target="_new">Perrine's Literature: Structure, Sound, and Sense</a></i></td>
+      <td>Thomas R. Arp</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>NULL</td>
+      <td>Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Norton+Anthology+of+English+Literature" target="_new">The Norton Anthology of English Literature</a></i></td>
+      <td>Stephen Greenblatt (editor)</td>
+      <td>False</td>
+      <td>Taught this</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Miraculous+Journey+of+Edward+Tulane" target="_new">The Miraculous Journey of Edward Tulane</a></i></td>
+      <td>Kate DiCamillo</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Inner+City+Mother+Goose" target="_new">The Inner City Mother Goose</a></i></td>
+      <td>Eve Merriam</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>NULL</td>
+      <td>Completed</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=Danny+the+Champion+of+the+World" target="_new">Danny the Champion of the World</a></i></td>
+      <td>Roald Dahl</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>NULL</td>
+      <td>Not Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Rise+of+Theodore+Roosevelt" target="_new">The Rise of Theodore Roosevelt</a></i></td>
+      <td>Edmund Morris</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>NULL</td>
+      <td>Not Started</td>
+      <td>Print</td>
+      <td><i><a href="https://www.amazon.com/s?k=The+Secret+History+of+the+Mongol+Queens" target="_new">The Secret History of the Mongol Queens</a></i></td>
+      <td>Jack Weatherford</td>
+      <td>False</td>
+      <td>NULL</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+<script src="scripts/main.js"></script>
+</body>
+</html>
