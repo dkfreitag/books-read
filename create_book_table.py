@@ -27,6 +27,7 @@ def main():
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.bootstrap5.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.7/css/responsive.bootstrap5.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/columncontrol/1.1.0/css/columnControl.dataTables.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
   
@@ -34,6 +35,8 @@ def main():
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.datatables.net/2.3.4/js/dataTables.js"></script>
   <script src="https://cdn.datatables.net/2.3.4/js/dataTables.bootstrap5.js"></script>
+  <script src="https://cdn.datatables.net/responsive/3.0.7/js/dataTables.responsive.js"></script>
+  <script src="https://cdn.datatables.net/responsive/3.0.7/js/responsive.bootstrap5.js"></script>
   <script src="https://cdn.datatables.net/columncontrol/1.1.0/js/dataTables.columnControl.min.js"></script>
   
   <title>David Freitag's Book List</title>
@@ -67,7 +70,7 @@ def main():
         data.insert(0, row_number) # add row number
         temp_col_counter = 1
         for col in data:
-            if temp_col_counter == 5: # italicize the book title in the "Title" column
+            if temp_col_counter == 2: # italicize the book title in the "Title" column
                 html_table_data_row += f"""\n      <td><i><a href="https://www.amazon.com/s?k={col.replace(' ', '+')}" target="_new">{col}</a></i></td>"""
             else:
                 html_table_data_row += f"\n      <td>{col}</td>"
